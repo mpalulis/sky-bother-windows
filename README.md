@@ -6,7 +6,7 @@ Plan observing sessions, browse deep-sky targets, and use your site and equipmen
 
 ## Download
 
-**Latest: [Download v0.2.0 — Comet Edition with icon ZIP](https://github.com/mpalulis/sky-bother-windows/releases/download/v0.2.0/SkyBother-v0.2.0-Windows-Comets-Icon-Updated.zip)**
+**Latest: [Download v0.2.0 — Clean Comet Edition ZIP](https://github.com/mpalulis/sky-bother-windows/releases/download/v0.2.0/SkyBother-v0.2.0-Windows-Clean.zip)**
 
 [Version 0.2.0 release notes and checksum](https://github.com/mpalulis/sky-bother-windows/releases/tag/v0.2.0)
 
@@ -26,7 +26,7 @@ Plan observing sessions, browse deep-sky targets, and use your site and equipmen
 - [v0.2.0 Comet Edition guide](HOW-TO-USE-SkyBother-v0.2.0.md)
 - [v0.1.0 Pre-comet guide](HOW-TO-USE-SkyBother-v0.1.0.md)
 
-Both downloads include an HTML guide for reading and printing.
+The clean v0.2.0 download includes START-HERE.txt linking to the online illustrated guide. The v0.1.0 With-Guide package includes an HTML guide.
 ## Screenshots — v0.2.0 Comet Edition
 
 ### Choose Comets in the planner
@@ -98,6 +98,7 @@ Please visit the original project for the macOS version. This repository distrib
 ## License and attribution
 
 Original copyright and license notices are preserved in [LICENSE](LICENSE). Catalog data and images have separate attribution and terms; see [CATALOG-LICENSE.md](CATALOG-LICENSE.md).
+
 
 
 

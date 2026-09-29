@@ -6,7 +6,9 @@ Plan observing sessions, browse deep-sky targets, and use your site and equipmen
 
 ## Download
 
-Open this repository's **Releases** page and choose **Sky Bother for Windows v0.1.0 — Pre-comet**. Download `SkyBother-v0.1.0-Windows-PreComet.zip` from its assets.
+**[Download Sky Bother for Windows v0.1.0 — Pre-comet ZIP](https://github.com/mpalulis/sky-bother-windows/releases/download/v0.1.0/SkyBother-v0.1.0-Windows-PreComet.zip)**
+
+[Release notes and checksum](https://github.com/mpalulis/sky-bother-windows/releases/tag/v0.1.0)
 
 This is the preserved Windows version from before comet lookup was added. The comet edition, v0.2.0, is being revised and tested separately.
 
@@ -50,3 +52,4 @@ Please visit the original project for the macOS version. This repository distrib
 ## License and attribution
 
 Original copyright and license notices are preserved in [LICENSE](LICENSE). Catalog data and images have separate attribution and terms; see [CATALOG-LICENSE.md](CATALOG-LICENSE.md).
+

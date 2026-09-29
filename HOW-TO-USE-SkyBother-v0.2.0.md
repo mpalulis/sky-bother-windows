@@ -10,6 +10,8 @@ Plan an observing night, compare targets, preview the sky, and look up comet coo
 
 This guide describes the Windows source reviewed on September 29, 2026 for the v0.2.0 release. It does not describe every feature of the separate macOS app. The comet sections do not apply to the pre-comet v0.1.0 release.
 
+> **REQUIRED FIRST STEP: Add or update your SITE LOCATION before validating coordinates or using observing recommendations.** A site named **Home** is only a saved label; it does not confirm that the coordinates are yours. Use **+ Site** to enter and confirm your actual observing location, save it, and select it in the toolbar. Verify latitude, longitude, elevation, and time zone, then click **Refresh**. Repeat this check whenever you observe from a different location.
+
 ## Contents
 
 1. Install, update, and keep your settings
@@ -311,6 +313,10 @@ Give the batch time to finish, then read any error message. A persistent “Filt
 
 ### Compare Seestar coordinates
 
+**Before you click Validate, add or update your SITE LOCATION and select it in the toolbar.** Check the actual latitude, longitude, elevation, and time zone; do not assume the saved Home site is correct. Click **Refresh**, select the intended observing night, then select the comet and use **Refresh ephemeris**. Check that the resulting coordinates show your intended location and time. Only then compare them with Seestar coordinates for that same site, time, comet, and coordinate frame.
+
+After changing the site, obtain a fresh reference position; do not validate against coordinates left over from the previous location.
+
 1. Select a comet with a successful Horizons position.
 2. Confirm that the coordinates you are comparing refer to the same comet, observing site, and time.
 3. Choose the matching frame in **Seestar Validation**. The app offers **Unknown**, **J2000 (saved/favorite)**, and **JNow (object details)**. Confirm the actual frame used by your telescope app rather than relying on the label alone.
@@ -381,4 +387,5 @@ The original **Sky Bother for macOS** was created by **WrendorWC**. This Windows
 Keep the original copyright and license notices with the distribution. See the release's `LICENSE` and `CATALOG-LICENSE.md` for source-code, catalog, and image attribution. The Windows app uses JPL small-body and Horizons services for comet data, Open-Meteo for forecast/place data, and OpenStreetMap-based services for map features. Bundled catalogs and images retain their own attribution and terms.
 
 For the underlying observing-query fields and time conventions, see [JPL Small-Body Observability API documentation](https://ssd-api.jpl.nasa.gov/doc/sbwobs.html). This guide distinguishes those service capabilities from the checks implemented by the current Windows app.
+
 

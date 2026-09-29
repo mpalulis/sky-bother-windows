@@ -19,6 +19,8 @@ Plan observing sessions, browse deep-sky targets, and use your site and equipmen
 | v0.2.0 | Latest Windows release | JPL candidates, imaging filters, and coordinates |
 | v0.1.0 | Preserved Windows baseline | Not included |
 
+> **REQUIRED FIRST STEP: Add or update your SITE LOCATION before validating coordinates or using observing recommendations.** A site named **Home** is only a saved label; it does not confirm that the coordinates are yours. Use **+ Site** to enter and confirm your actual observing location, save it, and select it in the toolbar. Verify latitude, longitude, elevation, and time zone, then click **Refresh**. Repeat this check whenever you observe from a different location.
+
 ## User guides
 
 - [v0.2.0 Comet Edition guide](HOW-TO-USE-SkyBother-v0.2.0.md)
@@ -96,6 +98,7 @@ Please visit the original project for the macOS version. This repository distrib
 ## License and attribution
 
 Original copyright and license notices are preserved in [LICENSE](LICENSE). Catalog data and images have separate attribution and terms; see [CATALOG-LICENSE.md](CATALOG-LICENSE.md).
+
 
 
 

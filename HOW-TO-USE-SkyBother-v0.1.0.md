@@ -8,6 +8,8 @@ A practical guide to planning an observing night, setting up your site and equip
 
 **Quick start:** Extract the whole ZIP, open SkyBother.exe, choose your site and equipment, click Refresh, select a night, then select a target.
 
+> **REQUIRED FIRST STEP: Add or update your SITE LOCATION before using observing recommendations.** A site named **Home** is only a saved label; it does not confirm that the coordinates are yours. Use **+ Site** to enter and confirm your actual observing location, save it, and select it in the toolbar. Verify latitude, longitude, elevation, and time zone, then click **Refresh**. Repeat this check whenever you observe from a different location.
+
 ## Contents
 
 1. Install, update, and keep your settings
@@ -277,5 +279,6 @@ The original **Sky Bother for macOS** was created by **WrendorWC**. This Windows
 
 
 Original copyright and license notices are included in LICENSE. See CATALOG-LICENSE.md for catalog and image attribution.
+
 
 

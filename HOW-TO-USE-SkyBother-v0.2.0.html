@@ -34,6 +34,9 @@ img{max-width:100%;height:auto;display:block;margin:16px 0}</style></head><body>
 <p><strong>Comets can take time to appear.</strong> When the main list says <strong>“Filtering comets…”</strong>, the app is checking JPL candidates in the background. The raw <strong>Night candidates</strong> list appears first, then the smaller <strong>Potential imaging targets</strong> shortlist is filtered locally from those results. A blank list during this stage does not, by itself, mean the app is broken. There is currently no progress counter or reliable completion estimate.</p>
 </blockquote>
 <p>This guide describes the Windows source reviewed on September 29, 2026 for the v0.2.0 release. It does not describe every feature of the separate macOS app. The comet sections do not apply to the pre-comet v0.1.0 release.</p>
+<blockquote>
+<p><strong>REQUIRED FIRST STEP: Add or update your SITE LOCATION before validating coordinates or using observing recommendations.</strong> A site named <strong>Home</strong> is only a saved label; it does not confirm that the coordinates are yours. Use <strong>+ Site</strong> to enter and confirm your actual observing location, save it, and select it in the toolbar. Verify latitude, longitude, elevation, and time zone, then click <strong>Refresh</strong>. Repeat this check whenever you observe from a different location.</p>
+</blockquote>
 <h2 id="contents">Contents</h2>
 <ol>
 <li>Install, update, and keep your settings</li>
@@ -402,6 +405,8 @@ Search by name or designation, then select an entry to request its Horizons coor
 <p><strong>Important:</strong> the app may choose a planning time from the selected night rather than the current clock time. Clicking <strong>Refresh ephemeris</strong> does not necessarily change the calculation to “right now.” Always inspect the displayed time and location before entering coordinates into another app.</p>
 <p><strong>Copy coordinates</strong> copies the designation, RA/Dec, frame, UTC time, location, and available altitude/azimuth information. It does not send a command to your telescope.</p>
 <h3 id="compare-seestar-coordinates">Compare Seestar coordinates</h3>
+<p><strong>Before you click Validate, add or update your SITE LOCATION and select it in the toolbar.</strong> Check the actual latitude, longitude, elevation, and time zone; do not assume the saved Home site is correct. Click <strong>Refresh</strong>, select the intended observing night, then select the comet and use <strong>Refresh ephemeris</strong>. Check that the resulting coordinates show your intended location and time. Only then compare them with Seestar coordinates for that same site, time, comet, and coordinate frame.</p>
+<p>After changing the site, obtain a fresh reference position; do not validate against coordinates left over from the previous location.</p>
 <ol>
 <li>Select a comet with a successful Horizons position.</li>
 <li>Confirm that the coordinates you are comparing refer to the same comet, observing site, and time.</li>

@@ -6,21 +6,25 @@ Plan observing sessions, browse deep-sky targets, and use your site and equipmen
 
 ## Download
 
-**[Download Sky Bother for Windows v0.1.0 — Pre-comet ZIP](https://github.com/mpalulis/sky-bother-windows/releases/download/v0.1.0/SkyBother-v0.1.0-Windows-PreComet-With-Guide.zip)**
+**Latest: [Download v0.2.0 — Comet Edition ZIP](https://github.com/mpalulis/sky-bother-windows/releases/download/v0.2.0/SkyBother-v0.2.0-Windows-Comets.zip)**
 
-[Release notes and checksum](https://github.com/mpalulis/sky-bother-windows/releases/tag/v0.1.0)
+[Version 0.2.0 release notes and checksum](https://github.com/mpalulis/sky-bother-windows/releases/tag/v0.2.0)
 
-This is the preserved Windows version from before comet lookup was added. The comet edition, v0.2.0, is being revised and tested separately.
+**Previous: [Download v0.1.0 — Pre-comet ZIP with guide](https://github.com/mpalulis/sky-bother-windows/releases/download/v0.1.0/SkyBother-v0.1.0-Windows-PreComet-With-Guide.zip)**
+
+[Version 0.1.0 release notes](https://github.com/mpalulis/sky-bother-windows/releases/tag/v0.1.0)
 
 | Version | Edition | Comet lookup |
 | --- | --- | --- |
+| v0.2.0 | Latest Windows release | JPL candidates, imaging filters, and coordinates |
 | v0.1.0 | Preserved Windows baseline | Not included |
-| v0.2.0 | Comet edition under development | Being revised and tested |
 
-## User guide
+## User guides
 
-Read the **[v0.1.0 Pre-comet User Guide](HOW-TO-USE-SkyBother-v0.1.0.md)**. The downloadable ZIP also includes an HTML guide you can open in your browser and print or save as PDF.
+- [v0.2.0 Comet Edition guide](HOW-TO-USE-SkyBother-v0.2.0.md)
+- [v0.1.0 Pre-comet guide](HOW-TO-USE-SkyBother-v0.1.0.md)
 
+Both downloads include an HTML guide for reading and printing.
 ## Screenshots — v0.1.0
 
 ### Main planner
@@ -74,6 +78,7 @@ Please visit the original project for the macOS version. This repository distrib
 ## License and attribution
 
 Original copyright and license notices are preserved in [LICENSE](LICENSE). Catalog data and images have separate attribution and terms; see [CATALOG-LICENSE.md](CATALOG-LICENSE.md).
+
 
 
 

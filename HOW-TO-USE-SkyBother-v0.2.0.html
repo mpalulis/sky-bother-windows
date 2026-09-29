@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sky Bother for Windows — v0.2.0 User Guide</title>
+<style>
+:root{color-scheme:light;--ink:#202838;--muted:#53627a;--accent:#234ab3;--line:#dbe2ee}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font:16px/1.65 system-ui,'Segoe UI',sans-serif;color:var(--ink);background:#f3f6fa}
+header{padding:30px max(24px,calc((100vw - 1320px)/2));background:#151c30;color:white}header p{margin:0;color:#c0cde9;font-size:14px}header strong{display:block;font-size:24px;letter-spacing:.02em}
+.layout{display:grid;grid-template-columns:260px minmax(0,960px);gap:40px;max-width:1320px;margin:32px auto;padding:0 24px}
+nav{position:sticky;top:20px;align-self:start;max-height:92vh;overflow:auto;font-size:13px}nav strong{display:block;margin-bottom:12px}nav a{display:block;padding:7px 8px;border-bottom:1px solid var(--line);text-decoration:none}
+main{background:white;padding:36px 48px;min-width:0;border:1px solid var(--line);border-radius:12px}h1{font-size:36px;line-height:1.2;margin:0 0 12px}h2{font-size:25px;line-height:1.3;margin-top:44px;padding-top:16px;border-top:1px solid var(--line);scroll-margin-top:24px}h3{font-size:19px;margin-top:28px}a{color:var(--accent)}p,li{max-width:82ch}li{margin:6px 0}table{border-collapse:collapse;width:100%;font-size:14px;margin:20px 0}th,td{text-align:left;vertical-align:top;padding:12px;border:1px solid var(--line)}th{background:#edf2fa}tr:nth-child(even){background:#fafbfd}blockquote{margin:24px 0;border-left:5px solid #d08b19;background:#fff7e6;padding:10px 20px}code{overflow-wrap:anywhere;font-size:.9em;background:#eef2f7;padding:2px 4px;border-radius:3px}button{border:1px solid #bac7e0;color:white;background:transparent;border-radius:6px;padding:8px 14px;margin-top:14px;cursor:pointer}.foot{font-size:13px;color:var(--muted);margin-top:40px}
+@media(max-width:850px){.layout{display:block;padding:0 12px}nav{position:static;max-height:none;margin-bottom:24px}main{padding:24px 18px}h1{font-size:30px}table{font-size:13px}th,td{padding:8px}}
+@media print{header,nav,button{display:none}.layout{display:block;margin:0;padding:0}body{background:white;font-size:10pt}main{padding:0;border:0}h1{font-size:24pt}h2{font-size:17pt;break-after:avoid}h3{break-after:avoid}tr,blockquote{break-inside:avoid}table{font-size:9pt}a{color:inherit}html{scroll-behavior:auto}}
+</style></head><body><header><strong>SKY BOTHER / WINDOWS</strong><p>v0.2.0 · User guide · Comet Edition</p><button onclick="window.print()">Print / Save as PDF</button></header><div class="layout"><nav aria-label="Guide sections"><strong>IN THIS GUIDE</strong><a href="#user-guide-v0.2.0-comet-edition">User guide · v0.2.0 Comet Edition</a>
+<a href="#contents">Contents</a>
+<a href="#install-update-and-keep-your-settings">1. Install, update, and keep your settings</a>
+<a href="#your-first-observing-session">2. Your first observing session</a>
+<a href="#main-screen-and-toolbar">3. Main screen and toolbar</a>
+<a href="#observing-sites-and-nearby-spots">4. Observing sites and nearby spots</a>
+<a href="#equipment-profiles">5. Equipment profiles</a>
+<a href="#nights-scores-conditions-and-the-timeline">6. Nights, scores, conditions, and the timeline</a>
+<a href="#targets-catalog-and-framing">7. Targets, catalog, and framing</a>
+<a href="#edit-plan-sky-view-and-session-view">8. Edit plan, Sky View, and Session View</a>
+<a href="#comet-lookup-and-the-waiting-period">9. Comet lookup and the waiting period</a>
+<a href="#comet-coordinates-and-seestar-validation">10. Comet coordinates and Seestar validation</a>
+<a href="#display-settings-and-saved-data">11. Display settings and saved data</a>
+<a href="#troubleshooting">12. Troubleshooting</a>
+<a href="#astronomy-terms">13. Astronomy terms</a>
+<a href="#credits">14. Credits</a></nav><main><h1 id="sky-bother-for-windows">Sky Bother for Windows</h1>
+<h2 id="user-guide-v0.2.0-comet-edition">User guide · v0.2.0 Comet Edition</h2>
+<p>Plan an observing night, compare targets, preview the sky, and look up comet coordinates for your observing location.</p>
+<p><strong>Start here:</strong> select your site and equipment, click <strong>Refresh</strong>, choose a night, then select a target. For comets, read <strong>Section 9</strong> before starting a lookup.</p>
+<blockquote>
+<p><strong>Comets can take time to appear.</strong> When the main list says <strong>“Filtering comets…”</strong>, the app is checking JPL candidates in the background. The raw <strong>Night candidates</strong> list appears first, then the smaller <strong>Potential imaging targets</strong> shortlist is filtered locally from those results. A blank list during this stage does not, by itself, mean the app is broken. There is currently no progress counter or reliable completion estimate.</p>
+</blockquote>
+<p>This guide describes the Windows source reviewed on September 29, 2026 for the v0.2.0 release. It does not describe every feature of the separate macOS app. The comet sections do not apply to the pre-comet v0.1.0 release.</p>
+<h2 id="contents">Contents</h2>
+<ol>
+<li>Install, update, and keep your settings</li>
+<li>Your first observing session</li>
+<li>Main screen and toolbar</li>
+<li>Observing sites and nearby spots</li>
+<li>Equipment profiles</li>
+<li>Nights, scores, conditions, and the timeline</li>
+<li>Targets, catalog, and framing</li>
+<li>Edit plan, Sky View, and Session View</li>
+<li>Comet lookup and the waiting period</li>
+<li>Comet coordinates and Seestar validation</li>
+<li>Display settings and saved data</li>
+<li>Troubleshooting</li>
+<li>Astronomy terms</li>
+<li>Credits</li>
+</ol>
+<h2 id="install-update-and-keep-your-settings">1. Install, update, and keep your settings</h2>
+<h3 id="first-installation">First installation</h3>
+<ol>
+<li>Download the Windows release ZIP. Choose <strong>v0.2.0 Comets</strong> for comet lookup; v0.1.0 is the earlier pre-comet release.</li>
+<li>Use <strong>Extract All</strong> in Windows. Open the extracted folder rather than running the application inside the ZIP.</li>
+<li>Keep <code>SkyBother.exe</code>, <code>Catalog</code>, <code>Data</code> when included, and the accompanying documents together. Moving only the executable can leave the app without its catalogs and pictures.</li>
+<li>Open <code>SkyBother.exe</code>. The published Windows x64 package is self-contained, so a separate .NET installation is not required for that package.</li>
+</ol>
+<p>Internet access is used for forecasts, place searches, map data, JPL catalog refreshes, comet visibility queries, and comet positions. Bundled catalog information is stored locally; that does not make all online features available offline.</p>
+<h3 id="updating-from-an-older-version">Updating from an older version</h3>
+<ol>
+<li>Close Sky Bother.</li>
+<li>Press <strong>Windows+R</strong>, enter <code>%AppData%\SkyBother</code>, and copy that folder to a backup location. It contains your saved settings and may contain the comet catalog cache.</li>
+<li>Extract the new release into a new folder. Keeping versions in separate folders makes it easier to return to the previous application.</li>
+<li>Start the new folder's <code>SkyBother.exe</code>. Check the selected site and equipment, then refresh the data.</li>
+<li>Update any desktop shortcut to point to the new executable.</li>
+</ol>
+<p>Both application versions use the same settings location. A separate application folder is not a separate settings profile. Keep the backup if you intend to switch back to v0.1.0. This release workflow uses manual downloads and extraction; there is no automatic application updater described here.</p>
+<h2 id="your-first-observing-session">2. Your first observing session</h2>
+<ol>
+<li>Click <strong>+ Site</strong>. Search for your town, enter coordinates, or use <strong>Use current location</strong>. Confirm the location, set its Bortle class and blocked horizon, and save it.</li>
+<li>Select that site in the toolbar.</li>
+<li>Select your telescope/equipment profile. Use <strong>Settings → Equipment</strong> to check its values.</li>
+<li>Click <strong>Refresh</strong> and let the forecast and nightly calculations finish.</li>
+<li>Select a night in the left column. Read its verdict, best imaging window, and weather status.</li>
+<li>Select a recommended target. Check its usable time, framing, score breakdown, and warnings.</li>
+<li>Open <strong>Edit plan</strong> to adjust the suggested schedule. Click <strong>Done</strong> to keep your changes.</li>
+<li>Open <strong>Sky View</strong> to preview target positions over the night. Use <strong>Session View</strong> during the observing session to follow the current and upcoming blocks.</li>
+</ol>
+<p>For a comet, choose between the visibility-filtered main list and the searchable catalog described in Section 9. Comet lookup is a separate workflow from the deep-sky session planner.</p>
+<h2 id="main-screen-and-toolbar">3. Main screen and toolbar</h2>
+<table>
+<thead>
+<tr>
+<th>Control or area</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<p>The app first asks JPL's Small-Body Observability service for candidates using the site's location, selected night, and minimum horizon elevation. It then uses the returned observing interval to separate raw night candidates from the smaller imaging shortlist. JPL marks total magnitudes with a trailing <code>T</code> and nuclear magnitudes with a trailing <code>N</code>; only confirmed total magnitudes count toward the shortlist unless <strong>Include Unknown</strong> is enabled. Horizons coordinates are fetched when you select a comet, not for every candidate up front.</p>
+<td>Chooses the observing location used for the calculations.</td>
+</tr>
+<tr>
+<td><strong>+ Site</strong></td>
+<td>Opens the observing-site editor to add a location.</td>
+</tr>
+<tr>
+<td><strong>Remove</strong></td>
+<td>Removes the selected saved site; read the confirmation before proceeding.</td>
+</tr>
+<tr>
+<td>Equipment selector</td>
+<td>Chooses the imaging profile used for framing and equipment-related calculations.</td>
+</tr>
+<tr>
+<td><strong>Night Mode</strong></td>
+<td>Applies a red, darker theme. <strong>Ctrl+Shift+N</strong> also toggles it.</td>
+</tr>
+<tr>
+<td><strong>Red</strong> slider</td>
+<td>Adjusts Night Mode intensity.</td>
+</tr>
+<tr>
+<td><strong>Settings</strong></td>
+<td>Opens <strong>Display units</strong>, <strong>Equipment</strong>, <strong>Catalog</strong>, and <strong>Comets</strong>.</td>
+</tr>
+<tr>
+<td><strong>Refresh</strong></td>
+<td>Refreshes the planner's forecast/calculations. It is distinct from <strong>Refresh comets</strong> and <strong>Refresh ephemeris</strong>.</td>
+</tr>
+<tr>
+<td><strong>Sky View</strong></td>
+<td>Opens a time-based sky preview for the selected night and deep-sky targets.</td>
+</tr>
+<tr>
+<td><strong>Session View</strong></td>
+<td>Opens the observing schedule display with the current block, remaining time, conditions, and later blocks.</td>
+</tr>
+<tr>
+<td>Left column</td>
+<td>Saved-site summary, available nights, nearby-site comparison, spot evaluation, and UI scale.</td>
+</tr>
+<tr>
+<td>Center column</td>
+<td>Selected-night summary, conditions, timeline, sky preview, tonight's plan, and target results.</td>
+</tr>
+<tr>
+<td>Selected-target panel</td>
+<td>Details, picture/framing where available, score factors, warnings, or comet coordinates and actions.</td>
+</tr>
+</tbody>
+</table>
+<p>Hover over chart legend items and controls with tooltips for additional explanations. Some controls only appear when a comet is selected or the Comets filter is active.</p>
+<h2 id="observing-sites-and-nearby-spots">4. Observing sites and nearby spots</h2>
+<h3 id="set-an-accurate-location">Set an accurate location</h3>
+<p>The site editor provides <strong>Search places</strong>, coordinate fields, and <strong>Use current location</strong>. A place-name search returns possible matches: select the correct result rather than assuming the first result is your observing spot.</p>
+<p>Latitude and longitude use decimal degrees. North/east are positive; south/west are negative. <strong>Site elevation</strong> is height above sea level; it is different from a target's altitude above the horizon.</p>
+<p>Automatic computer location is an estimate. In the confirmation map, check the pin, click the map or edit coordinates as needed, use <strong>Update pin</strong>, and then <strong>Confirm location</strong>. If location access fails, enter coordinates manually. Check the site's time-zone information as well, especially if the observing site is far from your computer.</p>
+<h3 id="light-pollution-and-obstacles">Light pollution and obstacles</h3>
+<ul>
+<li><strong>Bortle class:</strong> describes light pollution, from 1 (darkest) to 9 (brightest). It affects modeled target suitability. Choose a realistic value for the site.</li>
+<li><strong>Blocked horizon:</strong> the height, in degrees above a flat horizon, of obstructions in all directions. A larger value excludes more low targets. This field does not measure your trees or buildings automatically.</li>
+<li><strong>Nominal setup reference:</strong> the polar-axis elevation/direction shown in the site summary is a reference based on latitude. It is not a measurement of your mount's alignment error.</li>
+</ul>
+<h3 id="better-spot-nearby">Better Spot Nearby</h3>
+<p>This area compares your other saved/pinned sites with the selected site. Add more observing sites if the list says none have been pinned.</p>
+<p>Use <strong>Open horizon</strong>, <strong>Low horizon</strong>, or <strong>Any horizon</strong>, along with the distance buttons, to narrow the comparison. Distances follow your display-unit setting. The comparison depends on the stored site information; it is not a live survey of all possible observing locations.</p>
+<h3 id="evaluate-spot">Evaluate Spot</h3>
+<p>Enter <code>latitude, longitude</code>, choose <strong>Use selected site</strong>, or choose <strong>Use current location</strong>, then click <strong>Check</strong>. The app requests map-based information to estimate the spot's horizon. This can take time and requires internet access. Map links let you inspect the area. Treat the result as an estimate: verify obstacles and whether you can actually use the location.</p>
+<h2 id="equipment-profiles">5. Equipment profiles</h2>
+<p>Choose a preset from the equipment selector, then use <strong>Settings → Equipment</strong> if you need to adjust it. Check the profile against your actual configuration, including any reducer, camera, or filter changes.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Profile name</strong></td>
+<td>A name you can recognize later.</td>
+</tr>
+<tr>
+<td><strong>Aperture (mm)</strong></td>
+<td>Diameter of the telescope or lens opening.</td>
+</tr>
+<tr>
+<td><strong>Focal length (mm)</strong></td>
+<td>Effective focal length of your setup.</td>
+</tr>
+<tr>
+<td><strong>Sensor width / height (mm)</strong></td>
+<td>Physical sensor dimensions used for the field-of-view calculation.</td>
+</tr>
+<tr>
+<td><strong>Pixel size (µm)</strong></td>
+<td>Pixel size used to calculate image scale.</td>
+</tr>
+<tr>
+<td><strong>Mount</strong></td>
+<td>Alt-azimuth or equatorial; affects field-rotation considerations.</td>
+</tr>
+<tr>
+<td><strong>Zenith avoidance altitude (°)</strong></td>
+<td>Altitude associated with near-overhead warnings for applicable equipment.</td>
+</tr>
+<tr>
+<td><strong>Dual-band filter</strong></td>
+<td>Indicates the modeled filter capability for suitable targets.</td>
+</tr>
+<tr>
+<td><strong>Supports automatic mosaic</strong></td>
+<td>Indicates whether the setup can accommodate targets needing multiple panels.</td>
+</tr>
+</tbody>
+</table>
+<p>Click <strong>Save profile</strong> to keep changes. These values inform planning; they do not command the telescope, switch a physical filter, or start a mosaic.</p>
+<h2 id="nights-scores-conditions-and-the-timeline">6. Nights, scores, conditions, and the timeline</h2>
+<h3 id="choose-a-night">Choose a night</h3>
+<p>The <strong>NIGHTS</strong> column lists the computed observing nights. Click one to update the center panel. Times generally use the observing site's time zone. An observing night crosses midnight; before sunrise, the active night may carry the previous evening's date.</p>
+<h3 id="what-the-scores-mean">What the scores mean</h3>
+<p>Scores are modeled planning ratings on a 0–100 scale, not probabilities of successful observation. Higher generally means more favorable modeled conditions.</p>
+<p>The <strong>night score</strong> combines clear dark time, sky clarity, Moon interference, and conditions such as dew spread and gusts. A <strong>target score</strong> also considers time on target, sky darkness, cloud cover, altitude, framing, and detectability. The target's <strong>Score Breakdown</strong> explains the individual factors.</p>
+<p>The night verdict uses these bands: <strong>70 and above: Strong night</strong>; <strong>45–69: Mixed night</strong>; <strong>below 45: Thin night</strong>. Cloud-limited and forecast-unavailable messages can take priority over these labels.</p>
+<p><strong>A dash (—) is not a score of zero.</strong> Without a forecast covering the full night, the app withholds weather-dependent scores and shows an astronomy-only view. A target may still be geometrically available without being a clear-weather recommendation.</p>
+<h3 id="conditions-at-a-glance">Conditions at a glance</h3>
+<ul>
+<li><strong>Astro dark:</strong> the astronomical-darkness interval or available dark hours.</li>
+<li><strong>Moon down:</strong> dark time with the Moon below the horizon.</li>
+<li><strong>Moon phase / illumination:</strong> the phase and percentage of the Moon lit by the Sun.</li>
+<li><strong>Cloud:</strong> forecast cloud cover during dark hours; lower is generally preferable.</li>
+<li><strong>Temperature and gusts:</strong> forecast conditions to consider when setting up.</li>
+<li><strong>Dew advice:</strong> a forecast-based assessment using temperature/dew-point spread and wind. Messages such as <strong>Dew watch</strong>, <strong>Dew heater recommended</strong>, and <strong>Dew looks manageable</strong> are planning guidance. Missing forecast data can hide this advice.</li>
+</ul>
+<h3 id="read-the-timeline">Read the timeline</h3>
+<p>Time runs from left to right through the selected night. <strong>Cloud from top</strong> means the cloud layer paints downward from the chart's upper edge. <strong>Darker sky</strong> refers to the background darkening as twilight fades. The Moon curve shows its changing altitude; the selected target has an altitude curve and a shaded best window. Other target curves can appear for comparison.</p>
+<p>Use the legend labels rather than relying only on color, especially in Night Mode. Hover over a legend item for its explanation. The chart combines different quantities; a cloud layer is not an altitude measurement.</p>
+<p><strong>Best imaging window</strong> is the planner's preferred interval under its inputs and constraints. <strong>Usable time</strong> is the combined time satisfying the applicable criteria, which can include more than one interval. A target's highest point and its best imaging moment need not be identical.</p>
+<p>When the screen says <strong>POTENTIAL TARGETS · CLOUD LIMITED</strong>, the targets have astronomical windows but fail the normal cloud criterion. Do not interpret those rows as a clear-sky forecast.</p>
+<h2 id="targets-catalog-and-framing">7. Targets, catalog, and framing</h2>
+<h3 id="recommended-list">Recommended list</h3>
+<p>Use the search field to find a designation or name, the type selector to narrow object types, and the sort selector to compare <strong>Most Relevant</strong>, <strong>Score</strong>, <strong>Duration</strong>, or <strong>Name</strong>. These sorting choices apply to the deep-sky list. In the reviewed version, comet filter results are ordered by name even when the shared sort selector shows another choice.</p>
+<p>The main deep-sky list is filtered by the chosen night and recommendation criteria and displays at most 200 matches. It is not the whole catalog. If nothing appears, clear the search/type filter, check the site and date, and read the status line.</p>
+<h3 id="full-catalog">Full catalog</h3>
+<p>Open <strong>Settings → Catalog</strong> to browse the bundled deep-sky catalog. Search designations, common names, types, or constellations. Select a card to inspect its coordinates, magnitude, angular size, constellation, image attribution, and fit for the selected night; use <strong>Select target</strong> to bring it back to the planner.</p>
+<p>Catalog inclusion does not guarantee visibility tonight. A catalog image is a reference image, not a live view through your telescope.</p>
+<h3 id="selected-target">Selected target</h3>
+<p>Check the target name/designation, right ascension and declination, magnitude, angular size, best window, usable duration, and warnings. The framing display uses the selected equipment's field of view to help judge whether the target fits or needs a mosaic. It is a planning illustration, not a plate-solved camera view.</p>
+<p>Warnings can flag limited framing, low surface brightness, or alt-azimuth field rotation. A missing picture means no suitable bundled image is available; it does not necessarily mean the target data failed to load.</p>
+<h2 id="edit-plan-sky-view-and-session-view">8. Edit plan, Sky View, and Session View</h2>
+<h3 id="tonights-plan-and-edit-plan">Tonight's Plan and Edit Plan</h3>
+<p>The planner can suggest target blocks. Click a block to inspect/select its target, or open <strong>Edit plan</strong> to change the schedule.</p>
+<table>
+<thead>
+<tr>
+<th>Editor control</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Select a block</td>
+<td>Chooses which block the editing actions affect.</td>
+</tr>
+<tr>
+<td><strong>Earlier / Later</strong></td>
+<td>Moves the selected block in 15-minute steps, subject to schedule limits.</td>
+</tr>
+<tr>
+<td><strong>−15 min / +15 min</strong></td>
+<td>Shortens or lengthens the block, subject to schedule limits.</td>
+</tr>
+<tr>
+<td><strong>Remove</strong></td>
+<td>Removes the selected block from this plan.</td>
+</tr>
+<tr>
+<td>Target picker + <strong>Add to plan</strong></td>
+<td>Adds a deep-sky catalog target to an available stretch.</td>
+</tr>
+<tr>
+<td><strong>Use nightly suggestion</strong></td>
+<td>Replaces the manual arrangement with the suggested plan.</td>
+</tr>
+<tr>
+<td><strong>Done</strong></td>
+<td>Keeps the edited plan.</td>
+</tr>
+<tr>
+<td><strong>Cancel</strong></td>
+<td>Discards changes made in the editor.</td>
+</tr>
+</tbody>
+</table>
+<p>Blocks cannot overlap. If an adjustment will not fit, check neighboring blocks and the night boundaries. Unusable portions of a block remain visible rather than silently disappearing; read the warnings before relying on the schedule.</p>
+<h3 id="sky-view">Sky View</h3>
+<p>Open <strong>Sky View</strong> after choosing a night. Move the time slider to inspect the sky at different moments. <strong>Play/Pause</strong> animates the preview, and the speed selector changes playback speed. <strong>Jump to best window</strong> moves to the preferred target interval. Select a plan entry to inspect its target. <strong>Back</strong> returns from this view.</p>
+<p>The position/status area can report <strong>Shootable now</strong>, <strong>Blocked</strong>, <strong>Not dark enough now</strong>, or <strong>Not in a usable target window</strong>. “Now” here refers to the preview's displayed time, which can differ from the real clock.</p>
+<h3 id="session-view">Session View</h3>
+<p>This view follows the real clock against the selected night's plan. It shows the current or next target, scheduled times, remaining time, conditions, and <strong>What's Next</strong>. <strong>No active block</strong> can mean you are between blocks or before the plan; <strong>Plan complete</strong> means the scheduled blocks have ended. Use <strong>Planner</strong> to return.</p>
+<p>Reopen these views after changing the underlying plan/night if you need the latest schedule. They receive the plan when opened.</p>
+<p><strong>Comet limitation in this version:</strong> the plan editor, separate Sky View, and Session View use deep-sky catalog targets. Selecting a comet does not automatically add a moving-comet block to the schedule or provide a complete moving-comet track in those views. Use its dedicated coordinate details for comet work.</p>
+<h2 id="comet-lookup-and-the-waiting-period">9. Comet lookup and the waiting period</h2>
+<h3 id="route-a-find-candidates-for-your-selected-site-and-night">Route A — find candidates for your selected site and night</h3>
+<ol>
+<li>Select your actual observing site and click <strong>Refresh</strong> if no nights have been calculated.</li>
+<li>Select the observing night.</li>
+<li>Change the main target-type selector to <strong>Comets</strong>.</li>
+<li>Read the two sections that appear: <strong>Night candidates</strong> shows the raw JPL observing candidates, and <strong>Potential imaging targets</strong> applies the adjustable total-magnitude filter.</li>
+<li>Adjust the magnitude limit or toggle <strong>Include Unknown</strong> if you want a tighter or broader shortlist, then select a result to inspect its coordinates and time.</li>
+</ol>
+<p>The app first asks JPL's Small-Body Observability service for candidates using the site's location, selected night, and minimum horizon elevation. It then uses the returned observing interval to separate raw night candidates from the smaller imaging shortlist. JPL marks total magnitudes with a trailing <code>T</code> and nuclear magnitudes with a trailing <code>N</code>; only confirmed total magnitudes count toward the shortlist unless <strong>Include Unknown</strong> is enabled. Horizons coordinates are fetched when you select a comet, not for every candidate up front.</p>
+<h3 id="why-nothing-appears-immediately">Why nothing appears immediately</h3>
+<p>The list now separates the raw JPL night candidates from the smaller imaging shortlist. The raw observing list appears first, and the imaging list is filtered locally from that result. Horizons coordinates are loaded only when you select a comet, so the app does not make thousands of coordinate requests before showing anything.</p>
+<p>For example, <strong>“Night candidates”</strong> counts the objects returned for the selected observing night, while <strong>“Potential imaging targets”</strong> counts the objects that also pass the total-magnitude filter. The second number is a shortlist, not a telescope guarantee. Objects with no confirmed total magnitude only enter the shortlist if <strong>Include Unknown</strong> is enabled.</p>
+<p>Changing the search, night, or imaging filter can update the list. If nothing appears, check the site, date, horizon, and filter settings before refreshing again.</p>
+<h3 id="what-each-message-means">What each message means</h3>
+<table>
+<thead>
+<tr>
+<th>Message</th>
+<th>Meaning and what to do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Choose a site and calculate a night…</strong></td>
+<td>Select a site and refresh the planner before using the visibility filter.</td>
+</tr>
+<tr>
+<td><strong>Night candidates…</strong></td>
+<td>JPL returned above-horizon observing candidates for the selected night.</td>
+</tr>
+<tr>
+<td><strong>Potential imaging targets…</strong></td>
+<td>The total-magnitude shortlist is being shown below the raw candidates.</td>
+</tr>
+<tr>
+<td><strong>X night candidates / Y imaging targets</strong></td>
+<td>The raw JPL list and the filtered imaging shortlist both completed.</td>
+</tr>
+<tr>
+<td><strong>No night candidates… / 0 imaging targets</strong></td>
+<td>No results survived the current checks. Verify the site, night, horizon, search text, and total-magnitude filter.</td>
+</tr>
+<tr>
+<td><strong>Computing Horizons ephemeris…</strong></td>
+<td>The app is requesting coordinates for the selected comet.</td>
+</tr>
+<tr>
+<td><strong>Using bundled seed catalog</strong></td>
+<td>The app is using the included catalog rather than a successfully refreshed JPL list. Live coordinate queries still need a connection.</td>
+</tr>
+<tr>
+<td><strong>Last JPL refresh…</strong></td>
+<td>The time the catalog was last successfully downloaded; it is not the time for every displayed position.</td>
+</tr>
+<tr>
+<td><strong>Last refresh issue / timed out / network error</strong></td>
+<td>An online request failed. Read the message, check connectivity, and retry later.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="route-b-look-up-a-particular-comet-directly">Route B — look up a particular comet directly</h3>
+<ol>
+<li>Open <strong>Settings → Comets</strong>.</li>
+<li>Search the comet's name or designation.</li>
+<li>Select its entry. The app requests that comet's coordinates on demand.</li>
+<li>Inspect the location, computed time, coordinate frame, and altitude.</li>
+<li>Click <strong>Select comet</strong> to show it in the main detail panel.</li>
+</ol>
+<p>This catalog route does not perform the same all-candidate visibility filtering first. It can be more practical when you already know which comet you want. A catalog result may be below your horizon.</p>
+<p><strong>Refresh from JPL</strong> in the catalog and <strong>Refresh comets</strong> in the main view refresh the comet list. <strong>Refresh ephemeris</strong> refreshes the selected comet's calculated position. They serve different purposes.</p>
+<h3 id="what-meets-criteria-does-and-does-not-establish">What “meets criteria” does and does not establish</h3>
+<p>A result indicates that a candidate passed the implemented location/date/horizon checks. It does <strong>not</strong> guarantee sufficient brightness, clear weather, unobstructed views in every direction, or suitability for your telescope. Comets are not given the same weather/equipment score as deep-sky targets.</p>
+<p>An imaging telescope's ability to record a comet is a separate question from unaided-eye visibility. The current comet filter does not evaluate your particular exposure/stacking setup, alignment, or filter selection. Do not interpret its empty list as a claim that an S50 or another imaging telescope cannot capture a comet. A previous successful image establishes a useful observation to investigate, but its date and observing conditions still need to be matched when comparing it with a new lookup.</p>
+<p><strong>Known result-message limitation:</strong> if a coordinate lookup fails, the app reports the error separately from the valid night-candidate list. That outcome means the selected comet's coordinates are unavailable, not that the candidate itself vanished.</p>
+<p>The night-candidate list is based on JPL's observing interval and the selected site's horizon. It is not a claim that every listed comet is easy to image with your setup. Read the displayed observing window, magnitude type, and coordinate time before deciding whether a comet is worth pursuing.</p>
+<h3 id="if-it-seems-stuck">If it seems stuck</h3>
+<p>Give the batch time to finish, then read any error message. A persistent “Filtering…” label alone cannot establish whether it is progressing or waiting on a request, because this build has no per-candidate progress display. Try the direct catalog route for a named comet when practical. If the wait persists, note the site, selected night, search text, and exact status, then close/reopen the app and retry once. Report repeat failures with those details rather than repeatedly refreshing.</p>
+<h2 id="comet-coordinates-and-seestar-validation">10. Comet coordinates and Seestar validation</h2>
+<h3 id="read-the-details-before-using-coordinates">Read the details before using coordinates</h3>
+<ul>
+<li><strong>RA / Dec:</strong> the comet's celestial position in the stated coordinate frame.</li>
+<li><strong>Coordinate frame:</strong> the reference system, such as J2000 or apparent JNow. Values in different frames are not directly interchangeable.</li>
+<li><strong>Computed time / epoch:</strong> the instant for the position. Comets move, so coordinates are time-dependent.</li>
+<li><strong>Observing location:</strong> the latitude, longitude, and elevation used for the observer-specific calculation.</li>
+<li><strong>Altitude / elevation:</strong> degrees above or below the horizon. Negative means below the horizon.</li>
+<li><strong>Azimuth:</strong> compass direction expressed in degrees.</li>
+<li><strong>Total magnitude:</strong> an estimate when supplied. Missing magnitude is unknown, not zero.</li>
+<li><strong>Nuclear magnitude:</strong> a separate quantity when available. If it is not shown, the app does not invent one.</li>
+<li><strong>Visual magnitude:</strong> the JPL value shown for a selected ephemeris point. Treat it as an estimate, not a promise.</li>
+</ul>
+<p><strong>Important:</strong> the app may choose a planning time from the selected night rather than the current clock time. Clicking <strong>Refresh ephemeris</strong> does not necessarily change the calculation to “right now.” Always inspect the displayed time and location before entering coordinates into another app.</p>
+<p><strong>Copy coordinates</strong> copies the designation, RA/Dec, frame, UTC time, location, and available altitude/azimuth information. It does not send a command to your telescope.</p>
+<h3 id="compare-seestar-coordinates">Compare Seestar coordinates</h3>
+<ol>
+<li>Select a comet with a successful Horizons position.</li>
+<li>Confirm that the coordinates you are comparing refer to the same comet, observing site, and time.</li>
+<li>Choose the matching frame in <strong>Seestar Validation</strong>. The app offers <strong>Unknown</strong>, <strong>J2000 (saved/favorite)</strong>, and <strong>JNow (object details)</strong>. Confirm the actual frame used by your telescope app rather than relying on the label alone.</li>
+<li>Enter RA and Dec. Prefer RA in <code>HH:MM:SS</code> and Dec in signed degree/minute/second form, such as <code>+12:34:56</code>, to avoid ambiguous decimal RA units.</li>
+<li>Enter a positive tolerance in arcminutes; the displayed default is <strong>1.0</strong>.</li>
+<li>Click <strong>Validate</strong>.</li>
+</ol>
+<p><strong>Pass</strong> means the entered coordinates are within the chosen angular tolerance of the reference. <strong>Fail</strong> means the difference exceeds that tolerance. <strong>Cannot validate</strong> means a required input/reference/frame is unavailable or invalid.</p>
+<p>The app cannot independently read the site or timestamp belonging to coordinates pasted from Seestar. Even if the result says <strong>“site/time matched,”</strong> you must verify that match yourself. A pass is a numerical coordinate comparison, not confirmation that the telescope is physically pointing correctly or that the comet will be visible.</p>
+<h2 id="display-settings-and-saved-data">11. Display settings and saved data</h2>
+<p><strong>Settings → Display units</strong> switches between Metric and US customary. This changes displayed measurements, not the underlying calculations. Equipment fields retain the units printed beside them.</p>
+<p><strong>UI Scale</strong> changes the main screen's content size. Reduce it if content feels crowded; maximize the window and use the panels' scrollbars to reach additional content. <strong>Night Mode</strong> and its red-intensity control are saved between runs.</p>
+<p>Sites, equipment profiles, display choices, and manual session plans are stored in <code>%AppData%\SkyBother\settings.json</code>. The downloaded comet list can be stored as <code>comets-cache.json</code> in the same folder. A cached catalog is not a guarantee of offline Horizons positions.</p>
+<h2 id="troubleshooting">12. Troubleshooting</h2>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Check or action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Comet list is blank with <strong>Filtering…</strong></td>
+<td>Allow the batch to finish; see Section 9. Avoid repeatedly changing filters.</td>
+</tr>
+<tr>
+<td>A known comet is missing</td>
+<td>Clear the search, check the selected site/night/horizon, and use <strong>Settings → Comets</strong> for a direct catalog lookup.</td>
+</tr>
+<tr>
+<td>A comet is listed but cannot be seen</td>
+<td>Check the coordinate time, altitude, magnitude, clouds, local obstacles, and telescope capability.</td>
+</tr>
+<tr>
+<td>Coordinates disagree with another app</td>
+<td>Match designation, date/time, location, frame, and RA units first.</td>
+</tr>
+<tr>
+<td><strong>Cannot validate</strong></td>
+<td>Check the selected comet, successful reference position, coordinate formatting, and chosen frame.</td>
+</tr>
+<tr>
+<td>Scores show <strong>—</strong></td>
+<td>The night lacks complete forecast coverage. Astronomy-only results can still be available.</td>
+</tr>
+<tr>
+<td>Cloud-limited targets appear</td>
+<td>They show potential astronomical windows, not a promise of clear conditions.</td>
+</tr>
+<tr>
+<td>No deep-sky targets appear</td>
+<td>Clear filters, inspect horizon/site/equipment constraints, and open the full Catalog.</td>
+</tr>
+<tr>
+<td>Pictures or catalogs are missing</td>
+<td>Re-extract the complete release; keep <code>Catalog</code> and <code>Data</code> beside the executable.</td>
+</tr>
+<tr>
+<td>Computer location is wrong</td>
+<td>Correct the map pin or enter exact coordinates manually.</td>
+</tr>
+<tr>
+<td>Nearby list is empty</td>
+<td>Add other saved sites or broaden the radius/horizon filter.</td>
+</tr>
+<tr>
+<td>Plan block will not move or grow</td>
+<td>Check for overlapping blocks and the boundaries of the night.</td>
+</tr>
+<tr>
+<td>Session View says no active block</td>
+<td>Check the real clock, selected night, and scheduled block times.</td>
+</tr>
+<tr>
+<td>An older version opens</td>
+<td>Update the shortcut and launch the executable from the new release folder.</td>
+</tr>
+<tr>
+<td>Online features fail</td>
+<td>Check the connection and the error message; a service can be temporarily unavailable. Retry later.</td>
+</tr>
+</tbody>
+</table>
+<p>When reporting a problem, include the application version, exact message, selected date, relevant equipment/settings, and the steps that led to it. Include location only at the precision needed to reproduce the issue; a screenshot can contain your saved home coordinates.</p>
+<h2 id="astronomy-terms">13. Astronomy terms</h2>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Plain-language meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Altitude</td>
+<td>Height in the sky: 0° at the horizon and 90° overhead.</td>
+</tr>
+<tr>
+<td>Azimuth</td>
+<td>Direction around the horizon: 0° north, 90° east, 180° south, 270° west.</td>
+</tr>
+<tr>
+<td>RA / Dec</td>
+<td>Right ascension and declination: a celestial coordinate pair. RA is often displayed in hours; Dec in degrees.</td>
+</tr>
+<tr>
+<td>Ephemeris</td>
+<td>A calculated position, or series of positions, for specified times.</td>
+</tr>
+<tr>
+<td>Topocentric</td>
+<td>Calculated for an observer at a particular location on Earth.</td>
+</tr>
+<tr>
+<td>Transit</td>
+<td>Passage near a target's highest daily position across the local meridian.</td>
+</tr>
+<tr>
+<td>Magnitude</td>
+<td>A brightness scale on which smaller numbers mean brighter objects.</td>
+</tr>
+<tr>
+<td>Surface brightness</td>
+<td>How an object's light is spread across its apparent area.</td>
+</tr>
+<tr>
+<td>Arcminute / arcsecond</td>
+<td>Angular units: 60 arcminutes per degree and 60 arcseconds per arcminute.</td>
+</tr>
+<tr>
+<td>Field of view</td>
+<td>How much sky fits in the camera or viewing area.</td>
+</tr>
+<tr>
+<td>Mosaic</td>
+<td>Multiple overlapping image panels covering a larger area.</td>
+</tr>
+<tr>
+<td>Zenith</td>
+<td>The point directly overhead.</td>
+</tr>
+<tr>
+<td>Field rotation</td>
+<td>Rotation of the sky's orientation relative to the camera during tracking, relevant to alt-azimuth imaging.</td>
+</tr>
+<tr>
+<td>Dew-point spread</td>
+<td>The difference between air temperature and dew point; a smaller gap can indicate greater condensation risk.</td>
+</tr>
+<tr>
+<td>UTC</td>
+<td>A common time reference used in the copied comet coordinate information.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="credits">14. Credits</h2>
+<p>The original <strong>Sky Bother for macOS</strong> was created by <strong>WrendorWC</strong>. This Windows adaptation is based on their work.</p>
+<p><strong>Original project:</strong> <a href="https://github.com/WrendorWC/sky-bother">WrendorWC/sky-bother</a></p>
+<p>Keep the original copyright and license notices with the distribution. See the release's <code>LICENSE</code> and <code>CATALOG-LICENSE.md</code> for source-code, catalog, and image attribution. The Windows app uses JPL small-body and Horizons services for comet data, Open-Meteo for forecast/place data, and OpenStreetMap-based services for map features. Bundled catalogs and images retain their own attribution and terms.</p>
+<p>For the underlying observing-query fields and time conventions, see <a href="https://ssd-api.jpl.nasa.gov/doc/sbwobs.html">JPL Small-Body Observability API documentation</a>. This guide distinguishes those service capabilities from the checks implemented by the current Windows app.</p>
+<p class="foot">Guide prepared from the Windows source reviewed September 29, 2026. Keep this file with the release ZIP.</p></main></div></body></html>

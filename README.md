@@ -21,6 +21,24 @@ This is the preserved Windows version from before comet lookup was added. The co
 
 Read the **[v0.1.0 Pre-comet User Guide](HOW-TO-USE-SkyBother-v0.1.0.md)**. The downloadable ZIP also includes an HTML guide you can open in your browser and print or save as PDF.
 
+## Screenshots — v0.1.0
+
+### Main planner
+![Main planner with night ratings, conditions timeline, and Eastern Veil target details](v0.1.0-planner.png)
+Choose your site and equipment, compare nights on the left, and inspect the selected target on the right. This example is **cloud limited**: potential target windows do not mean clear weather is forecast.
+
+### Target catalog
+![Deep-sky target catalog with search, type filter, images, and IC 10 details](v0.1.0-catalog.png)
+Browse the deep-sky catalog, search or filter by type, and select a target to see its coordinates, size, and planning information. Pictures are reference images, not a live telescope view.
+
+### Sky View
+![Sky View showing Eastern Veil and the time slider](v0.1.0-sky-view.png)
+Move the time slider or press **Play** to preview the sky during the selected night. **Jump to best window** helps locate the preferred interval. The displayed time and status belong to the preview; check the planner's weather warnings separately.
+
+### Equipment selector
+![Equipment preset menu showing Seestar, Origin, Unistellar, Vaonis, DwarfLab, and camera options](v0.1.0-equipment.png)
+Select the preset matching your setup, then check its values in **Settings → Equipment**. Equipment profiles support planning and framing; choosing one does not connect to or control the telescope.
+
 ## Install and run
 
 1. Download the Windows ZIP from **Releases**.
@@ -56,5 +74,6 @@ Please visit the original project for the macOS version. This repository distrib
 ## License and attribution
 
 Original copyright and license notices are preserved in [LICENSE](LICENSE). Catalog data and images have separate attribution and terms; see [CATALOG-LICENSE.md](CATALOG-LICENSE.md).
+
 
 

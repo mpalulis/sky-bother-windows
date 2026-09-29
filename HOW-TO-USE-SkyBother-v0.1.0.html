@@ -10,8 +10,9 @@ nav{position:sticky;top:20px;align-self:start;max-height:92vh;overflow:auto;font
 main{background:white;padding:36px 48px;min-width:0;border:1px solid var(--line);border-radius:12px}h1{font-size:36px;line-height:1.2;margin:0 0 12px}h2{font-size:25px;line-height:1.3;margin-top:44px;padding-top:16px;border-top:1px solid var(--line);scroll-margin-top:24px}h3{font-size:19px;margin-top:28px}a{color:var(--accent)}p,li{max-width:82ch}li{margin:6px 0}table{border-collapse:collapse;width:100%;font-size:14px;margin:20px 0}th,td{text-align:left;vertical-align:top;padding:12px;border:1px solid var(--line)}th{background:#edf2fa}tr:nth-child(even){background:#fafbfd}blockquote{margin:24px 0;border-left:5px solid #d08b19;background:#fff7e6;padding:10px 20px}code{overflow-wrap:anywhere;font-size:.9em;background:#eef2f7;padding:2px 4px;border-radius:3px}button{border:1px solid #bac7e0;color:white;background:transparent;border-radius:6px;padding:8px 14px;margin-top:14px;cursor:pointer}.foot{font-size:13px;color:var(--muted);margin-top:40px}
 @media(max-width:850px){.layout{display:block;padding:0 12px}nav{position:static;max-height:none;margin-bottom:24px}main{padding:24px 18px}h1{font-size:30px}table{font-size:13px}th,td{padding:8px}}
 @media print{header,nav,button{display:none}.layout{display:block;margin:0;padding:0}body{background:white;font-size:10pt}main{padding:0;border:0}h1{font-size:24pt}h2{font-size:17pt;break-after:avoid}h3{break-after:avoid}tr,blockquote{break-inside:avoid}table{font-size:9pt}a{color:inherit}html{scroll-behavior:auto}}
-</style></head><body><header><strong>SKY BOTHER / WINDOWS</strong><p>v0.1.0 · User guide · Pre-comet Edition</p><button onclick="window.print()">Print / Save as PDF</button></header><div class="layout"><nav aria-label="Guide sections"><strong>IN THIS GUIDE</strong><a href="#pre-comet-edition">Pre-comet edition</a>
+img{max-width:100%;height:auto;display:block;margin:16px 0;border-radius:6px}</style></head><body><header><strong>SKY BOTHER / WINDOWS</strong><p>v0.1.0 · User guide · Pre-comet Edition</p><button onclick="window.print()">Print / Save as PDF</button></header><div class="layout"><nav aria-label="Guide sections"><strong>IN THIS GUIDE</strong><a href="#pre-comet-edition">Pre-comet edition</a>
 <a href="#contents">Contents</a>
+<a href="#screenshots-v0.1.0">Screenshots — v0.1.0</a>
 <a href="#install-update-and-keep-your-settings">1. Install, update, and keep your settings</a>
 <a href="#your-first-observing-session">2. Your first observing session</a>
 <a href="#main-screen-and-toolbar">3. Main screen and toolbar</a>
@@ -43,6 +44,19 @@ main{background:white;padding:36px 48px;min-width:0;border:1px solid var(--line)
 <li>Astronomy terms</li>
 <li>Credits</li>
 </ol>
+<h2 id="screenshots-v0.1.0">Screenshots — v0.1.0</h2>
+<h3 id="main-planner">Main planner</h3>
+<p><img src="v0.1.0-planner.png" alt="Main planner with night ratings, conditions timeline, and Eastern Veil target details" />
+Choose your site and equipment, compare nights on the left, and inspect the selected target on the right. This example is <strong>cloud limited</strong>: potential target windows do not mean clear weather is forecast.</p>
+<h3 id="target-catalog">Target catalog</h3>
+<p><img src="v0.1.0-catalog.png" alt="Deep-sky target catalog with search, type filter, images, and IC 10 details" />
+Browse the deep-sky catalog, search or filter by type, and select a target to see its coordinates, size, and planning information. Pictures are reference images, not a live telescope view.</p>
+<h3 id="sky-view">Sky View</h3>
+<p><img src="v0.1.0-sky-view.png" alt="Sky View showing Eastern Veil and the time slider" />
+Move the time slider or press <strong>Play</strong> to preview the sky during the selected night. <strong>Jump to best window</strong> helps locate the preferred interval. The displayed time and status belong to the preview; check the planner's weather warnings separately.</p>
+<h3 id="equipment-selector">Equipment selector</h3>
+<p><img src="v0.1.0-equipment.png" alt="Equipment preset menu showing Seestar, Origin, Unistellar, Vaonis, DwarfLab, and camera options" />
+Select the preset matching your setup, then check its values in <strong>Settings → Equipment</strong>. Equipment profiles support planning and framing; choosing one does not connect to or control the telescope.</p>
 <h2 id="install-update-and-keep-your-settings">1. Install, update, and keep your settings</h2>
 <h3 id="first-installation">First installation</h3>
 <ol>
@@ -277,7 +291,7 @@ main{background:white;padding:36px 48px;min-width:0;border:1px solid var(--line)
 </tbody>
 </table>
 <p>Blocks cannot overlap. If an adjustment will not fit, check neighboring blocks and the night boundaries. Unusable portions of a block remain visible rather than silently disappearing; read the warnings before relying on the schedule.</p>
-<h3 id="sky-view">Sky View</h3>
+<h3 id="sky-view-1">Sky View</h3>
 <p>Open <strong>Sky View</strong> after choosing a night. Move the time slider to inspect the sky at different moments. <strong>Play/Pause</strong> animates the preview, and the speed selector changes playback speed. <strong>Jump to best window</strong> moves to the preferred target interval. Select a plan entry to inspect its target. <strong>Back</strong> returns from this view.</p>
 <p>The position/status area can report <strong>Shootable now</strong>, <strong>Blocked</strong>, <strong>Not dark enough now</strong>, or <strong>Not in a usable target window</strong>. “Now” here refers to the preview's displayed time, which can differ from the real clock.</p>
 <h3 id="session-view">Session View</h3>
@@ -409,6 +423,6 @@ main{background:white;padding:36px 48px;min-width:0;border:1px solid var(--line)
 <h2 id="credits">12. Credits</h2>
 <p>The original <strong>Sky Bother for macOS</strong> was created by <strong>WrendorWC</strong>. This Windows adaptation is based on their work.</p>
 <p><strong>Original project:</strong> <a href="https://github.com/WrendorWC/sky-bother">WrendorWC/sky-bother</a></p>
-<p>For the underlying observing-query fields and time conventions, see <a href="https://ssd-api.jpl.nasa.gov/doc/sbwobs.html">JPL Small-Body Observability API documentation</a>.</p>
 <p>Original copyright and license notices are included in LICENSE. See CATALOG-LICENSE.md for catalog and image attribution.</p>
 <p class="foot">Guide for the preserved Windows pre-comet release. Keep this file with the release ZIP.</p></main></div></body></html>
+

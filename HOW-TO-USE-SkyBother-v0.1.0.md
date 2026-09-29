@@ -22,6 +22,24 @@ A practical guide to planning an observing night, setting up your site and equip
 10. Troubleshooting
 11. Astronomy terms
 12. Credits
+## Screenshots — v0.1.0
+
+### Main planner
+![Main planner with night ratings, conditions timeline, and Eastern Veil target details](v0.1.0-planner.png)
+Choose your site and equipment, compare nights on the left, and inspect the selected target on the right. This example is **cloud limited**: potential target windows do not mean clear weather is forecast.
+
+### Target catalog
+![Deep-sky target catalog with search, type filter, images, and IC 10 details](v0.1.0-catalog.png)
+Browse the deep-sky catalog, search or filter by type, and select a target to see its coordinates, size, and planning information. Pictures are reference images, not a live telescope view.
+
+### Sky View
+![Sky View showing Eastern Veil and the time slider](v0.1.0-sky-view.png)
+Move the time slider or press **Play** to preview the sky during the selected night. **Jump to best window** helps locate the preferred interval. The displayed time and status belong to the preview; check the planner's weather warnings separately.
+
+### Equipment selector
+![Equipment preset menu showing Seestar, Origin, Unistellar, Vaonis, DwarfLab, and camera options](v0.1.0-equipment.png)
+Select the preset matching your setup, then check its values in **Settings → Equipment**. Equipment profiles support planning and framing; choosing one does not connect to or control the telescope.
+
 ## 1. Install, update, and keep your settings
 
 ### First installation
@@ -256,8 +274,8 @@ The original **Sky Bother for macOS** was created by **WrendorWC**. This Windows
 **Original project:** [WrendorWC/sky-bother](https://github.com/WrendorWC/sky-bother)
 
 
-For the underlying observing-query fields and time conventions, see [JPL Small-Body Observability API documentation](https://ssd-api.jpl.nasa.gov/doc/sbwobs.html). 
 
 
 Original copyright and license notices are included in LICENSE. See CATALOG-LICENSE.md for catalog and image attribution.
+
 

@@ -95,6 +95,46 @@ Application versions may share the same settings location. A separate applicatio
 
 ## 4. Observing sites and nearby spots
 
+### Illustrated setup: add and confirm your observing site
+
+**Complete these steps before using recommendations or, in v0.2.0, validating comet coordinates.** The screenshots were taken in v0.2.0 and illustrate the shared site-setup workflow. The pre-comet v0.1.0 edition does not include the comet-validation panel shown in the first image. Coordinates in these pictures are examples: enter your own observing location.
+
+#### Step 1 — Open the site editor
+
+Click **+ Site** beside the site selector. A saved name such as **Home** does not prove that its coordinates match your observing location.
+
+![Step 1: the + Site button highlighted on the main toolbar](setup-site-step-1.png)
+
+#### Step 2 — Find your location
+
+In **Where will you set up?**, choose **Use current location** if the computer is at your observing site. Alternatively, search for a place and select the correct match, or enter your site's latitude and longitude manually. If you are planning a trip, use the destination's coordinates rather than your computer's current location.
+
+![Step 2: Use current location in the observing-site editor](setup-site-step-2.png)
+
+#### Step 3 — Check and correct the estimated map position
+
+The computer's location can be approximate. Check the red pin against your actual observing spot. Click the correct spot on the map, or correct the coordinate fields. The arrow in this example illustrates correcting an estimated position; it is not a direction every user should move the pin.
+
+![Step 3: inspect the estimated location and move the pin to your actual observing spot](setup-site-step-3.png)
+
+#### Step 4 — Check the coordinates
+
+You can enter latitude and longitude directly. Use decimal degrees: north and east are positive, south and west are negative. Check both fields and the **Final coordinates** readout. Do not copy the example numbers unless they really are your observing site.
+
+![Step 4: latitude, longitude, and final coordinates fields](setup-site-step-5.png)
+
+#### Step 5 — Update the pin and confirm
+
+After editing coordinates, click **Update pin** and verify that the map marker is in the intended place. Then click **Confirm location**. Scroll down in the confirmation window if these buttons are out of view.
+
+![Step 5: corrected map pin, Update pin, and Confirm location buttons](setup-site-step-4.png)
+
+#### Step 6 — Save, select, and refresh
+
+Back in the observing-site editor shown in Step 2, check the site's name, **Bortle class**, and **Blocked horizon**, then click **Save site**. Select that saved site in the main toolbar and verify the site summary. Check the elevation and time-zone information used for your site, then click **Refresh** and choose the intended observing night.
+
+**For v0.2.0 comet validation:** after changing the site, select the comet and refresh its ephemeris. Confirm that the displayed location, time, and coordinate frame match the coordinates you intend to compare before clicking **Validate**. Confirming the map location alone does not perform comet-coordinate validation.
+
 ### Set an accurate location
 
 The site editor provides **Search places**, coordinate fields, and **Use current location**. A place-name search returns possible matches: select the correct result rather than assuming the first result is your observing spot.
@@ -279,6 +319,7 @@ The original **Sky Bother for macOS** was created by **WrendorWC**. This Windows
 
 
 Original copyright and license notices are included in LICENSE. See CATALOG-LICENSE.md for catalog and image attribution.
+
 
 
 

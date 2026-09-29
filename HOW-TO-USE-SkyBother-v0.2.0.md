@@ -27,6 +27,24 @@ This guide describes the Windows source reviewed on September 29, 2026 for the v
 13. Astronomy terms
 14. Credits
 
+## Screenshots — v0.2.0 Comet Edition
+
+### Choose Comets in the planner
+![v0.2.0 planner with the target-type menu showing Comets](v0.2.0-planner.png)
+Choose **Comets** from the target-type menu to request night candidates for the selected site and observing night. The planner also retains its deep-sky targets, weather timeline, and equipment profiles.
+
+### Open the comet catalog
+![Settings menu with the Comets option](v0.2.0-settings.png)
+Use **Settings → Comets** to browse or search the comet catalog directly, including when a known object is absent from the imaging shortlist.
+
+### Inspect a selected comet
+![Comet catalog with search, JPL refresh, and selected-object Horizons coordinates](v0.2.0-comet-catalog.png)
+Search by name or designation, then select an entry to request its Horizons coordinates. Check the displayed observation time and coordinate frame. **Refresh from JPL** updates the catalog. Catalog membership alone does not establish that a comet is a practical observing target, and SBDB M1 is a model parameter rather than current apparent brightness.
+
+### Night candidates and imaging filters
+![Night candidates with estimated total magnitude limit and Include unknown brightness enabled](v0.2.0-night-candidates.png)
+**Night candidates** are geometric opportunities returned by JPL. **Potential imaging targets** also pass the chosen total-magnitude filter. This example has **Include unknown brightness** enabled, so its large count includes objects whose total brightness is unknown; it is not a count of guaranteed telescope detections. Select an object for coordinates and observing guidance. Counts depend on the site, night, and filter settings.
+
 ## 1. Install, update, and keep your settings
 
 ### First installation
@@ -363,3 +381,4 @@ The original **Sky Bother for macOS** was created by **WrendorWC**. This Windows
 Keep the original copyright and license notices with the distribution. See the release's `LICENSE` and `CATALOG-LICENSE.md` for source-code, catalog, and image attribution. The Windows app uses JPL small-body and Horizons services for comet data, Open-Meteo for forecast/place data, and OpenStreetMap-based services for map features. Bundled catalogs and images retain their own attribution and terms.
 
 For the underlying observing-query fields and time conventions, see [JPL Small-Body Observability API documentation](https://ssd-api.jpl.nasa.gov/doc/sbwobs.html). This guide distinguishes those service capabilities from the checks implemented by the current Windows app.
+

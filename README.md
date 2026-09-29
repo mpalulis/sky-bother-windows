@@ -25,6 +25,24 @@ Plan observing sessions, browse deep-sky targets, and use your site and equipmen
 - [v0.1.0 Pre-comet guide](HOW-TO-USE-SkyBother-v0.1.0.md)
 
 Both downloads include an HTML guide for reading and printing.
+## Screenshots — v0.2.0 Comet Edition
+
+### Choose Comets in the planner
+![v0.2.0 planner with the target-type menu showing Comets](v0.2.0-planner.png)
+Choose **Comets** from the target-type menu to request night candidates for the selected site and observing night. The planner also retains its deep-sky targets, weather timeline, and equipment profiles.
+
+### Open the comet catalog
+![Settings menu with the Comets option](v0.2.0-settings.png)
+Use **Settings → Comets** to browse or search the comet catalog directly, including when a known object is absent from the imaging shortlist.
+
+### Inspect a selected comet
+![Comet catalog with search, JPL refresh, and selected-object Horizons coordinates](v0.2.0-comet-catalog.png)
+Search by name or designation, then select an entry to request its Horizons coordinates. Check the displayed observation time and coordinate frame. **Refresh from JPL** updates the catalog. Catalog membership alone does not establish that a comet is a practical observing target, and SBDB M1 is a model parameter rather than current apparent brightness.
+
+### Night candidates and imaging filters
+![Night candidates with estimated total magnitude limit and Include unknown brightness enabled](v0.2.0-night-candidates.png)
+**Night candidates** are geometric opportunities returned by JPL. **Potential imaging targets** also pass the chosen total-magnitude filter. This example has **Include unknown brightness** enabled, so its large count includes objects whose total brightness is unknown; it is not a count of guaranteed telescope detections. Select an object for coordinates and observing guidance. Counts depend on the site, night, and filter settings.
+
 ## Screenshots — v0.1.0
 
 ### Main planner
@@ -78,6 +96,7 @@ Please visit the original project for the macOS version. This repository distrib
 ## License and attribution
 
 Original copyright and license notices are preserved in [LICENSE](LICENSE). Catalog data and images have separate attribution and terms; see [CATALOG-LICENSE.md](CATALOG-LICENSE.md).
+
 
 
 

@@ -10,8 +10,9 @@ nav{position:sticky;top:20px;align-self:start;max-height:92vh;overflow:auto;font
 main{background:white;padding:36px 48px;min-width:0;border:1px solid var(--line);border-radius:12px}h1{font-size:36px;line-height:1.2;margin:0 0 12px}h2{font-size:25px;line-height:1.3;margin-top:44px;padding-top:16px;border-top:1px solid var(--line);scroll-margin-top:24px}h3{font-size:19px;margin-top:28px}a{color:var(--accent)}p,li{max-width:82ch}li{margin:6px 0}table{border-collapse:collapse;width:100%;font-size:14px;margin:20px 0}th,td{text-align:left;vertical-align:top;padding:12px;border:1px solid var(--line)}th{background:#edf2fa}tr:nth-child(even){background:#fafbfd}blockquote{margin:24px 0;border-left:5px solid #d08b19;background:#fff7e6;padding:10px 20px}code{overflow-wrap:anywhere;font-size:.9em;background:#eef2f7;padding:2px 4px;border-radius:3px}button{border:1px solid #bac7e0;color:white;background:transparent;border-radius:6px;padding:8px 14px;margin-top:14px;cursor:pointer}.foot{font-size:13px;color:var(--muted);margin-top:40px}
 @media(max-width:850px){.layout{display:block;padding:0 12px}nav{position:static;max-height:none;margin-bottom:24px}main{padding:24px 18px}h1{font-size:30px}table{font-size:13px}th,td{padding:8px}}
 @media print{header,nav,button{display:none}.layout{display:block;margin:0;padding:0}body{background:white;font-size:10pt}main{padding:0;border:0}h1{font-size:24pt}h2{font-size:17pt;break-after:avoid}h3{break-after:avoid}tr,blockquote{break-inside:avoid}table{font-size:9pt}a{color:inherit}html{scroll-behavior:auto}}
-</style></head><body><header><strong>SKY BOTHER / WINDOWS</strong><p>v0.2.0 · User guide · Comet Edition</p><button onclick="window.print()">Print / Save as PDF</button></header><div class="layout"><nav aria-label="Guide sections"><strong>IN THIS GUIDE</strong><a href="#user-guide-v0.2.0-comet-edition">User guide · v0.2.0 Comet Edition</a>
+img{max-width:100%;height:auto;display:block;margin:16px 0}</style></head><body><header><strong>SKY BOTHER / WINDOWS</strong><p>v0.2.0 · User guide · Comet Edition</p><button onclick="window.print()">Print / Save as PDF</button></header><div class="layout"><nav aria-label="Guide sections"><strong>IN THIS GUIDE</strong><a href="#user-guide-v0.2.0-comet-edition">User guide · v0.2.0 Comet Edition</a>
 <a href="#contents">Contents</a>
+<a href="#screenshots-v0.2.0-comet-edition">Screenshots — v0.2.0 Comet Edition</a>
 <a href="#install-update-and-keep-your-settings">1. Install, update, and keep your settings</a>
 <a href="#your-first-observing-session">2. Your first observing session</a>
 <a href="#main-screen-and-toolbar">3. Main screen and toolbar</a>
@@ -50,6 +51,19 @@ main{background:white;padding:36px 48px;min-width:0;border:1px solid var(--line)
 <li>Astronomy terms</li>
 <li>Credits</li>
 </ol>
+<h2 id="screenshots-v0.2.0-comet-edition">Screenshots — v0.2.0 Comet Edition</h2>
+<h3 id="choose-comets-in-the-planner">Choose Comets in the planner</h3>
+<p><img src="v0.2.0-planner.png" alt="v0.2.0 planner with the target-type menu showing Comets" />
+Choose <strong>Comets</strong> from the target-type menu to request night candidates for the selected site and observing night. The planner also retains its deep-sky targets, weather timeline, and equipment profiles.</p>
+<h3 id="open-the-comet-catalog">Open the comet catalog</h3>
+<p><img src="v0.2.0-settings.png" alt="Settings menu with the Comets option" />
+Use <strong>Settings → Comets</strong> to browse or search the comet catalog directly, including when a known object is absent from the imaging shortlist.</p>
+<h3 id="inspect-a-selected-comet">Inspect a selected comet</h3>
+<p><img src="v0.2.0-comet-catalog.png" alt="Comet catalog with search, JPL refresh, and selected-object Horizons coordinates" />
+Search by name or designation, then select an entry to request its Horizons coordinates. Check the displayed observation time and coordinate frame. <strong>Refresh from JPL</strong> updates the catalog. Catalog membership alone does not establish that a comet is a practical observing target, and SBDB M1 is a model parameter rather than current apparent brightness.</p>
+<h3 id="night-candidates-and-imaging-filters">Night candidates and imaging filters</h3>
+<p><img src="v0.2.0-night-candidates.png" alt="Night candidates with estimated total magnitude limit and Include unknown brightness enabled" />
+<strong>Night candidates</strong> are geometric opportunities returned by JPL. <strong>Potential imaging targets</strong> also pass the chosen total-magnitude filter. This example has <strong>Include unknown brightness</strong> enabled, so its large count includes objects whose total brightness is unknown; it is not a count of guaranteed telescope detections. Select an object for coordinates and observing guidance. Counts depend on the site, night, and filter settings.</p>
 <h2 id="install-update-and-keep-your-settings">1. Install, update, and keep your settings</h2>
 <h3 id="first-installation">First installation</h3>
 <ol>
@@ -90,7 +104,7 @@ main{background:white;padding:36px 48px;min-width:0;border:1px solid var(--line)
 </thead>
 <tbody>
 <tr>
-<p>The app first asks JPL's Small-Body Observability service for candidates using the site's location, selected night, and minimum horizon elevation. It then uses the returned observing interval to separate raw night candidates from the smaller imaging shortlist. JPL marks total magnitudes with a trailing <code>T</code> and nuclear magnitudes with a trailing <code>N</code>; only confirmed total magnitudes count toward the shortlist unless <strong>Include Unknown</strong> is enabled. Horizons coordinates are fetched when you select a comet, not for every candidate up front.</p>
+<td>Site selector</td>
 <td>Chooses the observing location used for the calculations.</td>
 </tr>
 <tr>
@@ -551,3 +565,4 @@ main{background:white;padding:36px 48px;min-width:0;border:1px solid var(--line)
 <p>Keep the original copyright and license notices with the distribution. See the release's <code>LICENSE</code> and <code>CATALOG-LICENSE.md</code> for source-code, catalog, and image attribution. The Windows app uses JPL small-body and Horizons services for comet data, Open-Meteo for forecast/place data, and OpenStreetMap-based services for map features. Bundled catalogs and images retain their own attribution and terms.</p>
 <p>For the underlying observing-query fields and time conventions, see <a href="https://ssd-api.jpl.nasa.gov/doc/sbwobs.html">JPL Small-Body Observability API documentation</a>. This guide distinguishes those service capabilities from the checks implemented by the current Windows app.</p>
 <p class="foot">Guide prepared from the Windows source reviewed September 29, 2026. Keep this file with the release ZIP.</p></main></div></body></html>
+
